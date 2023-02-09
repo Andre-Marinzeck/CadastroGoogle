@@ -1,0 +1,58 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 51%;
+    margin: 2rem auto;
+    padding: 1.5rem 40px;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+}
+
+.logo img{
+    width: 4.5rem;
+}
+
+.logo h2 {
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+a {
+    font-size: .85rem;
+    font-weight: bold;
+    color: #136df3 ;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1B66CC;
+}
+
+form p{
+    width: 87%;
+    font-size: .75rem;
+    color: #5F6368;
+}
+
+.send {
+    display: flex;
+    margin-top: 3.5rem;
+    padding-right: 4rem;
+}
+.img {
+    text-align: center;
+    width: 45%;
+}
+
+.img img {
+    width: 15rem;
+}

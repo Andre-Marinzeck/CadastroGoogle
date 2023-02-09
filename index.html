@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./img/logo.svg" alt="">
+            <h2>Criar sua Conta do Google</h2>
+        </div>
+        <div class="content">
+            <form id="form" action="http://localhost:8081/conta/cadastrar" method="POST" onsubmit="return nameValidation(), emailValidation(), passwordValidation()">
+                
+                <div class="name">
+                    <input type="text" placeholder="Nome" id="name" name="name">
+                    <input type="text" placeholder="Sobrenome" id="surname" name="surname">
+                    <div id="nameError"></div>
+                </div>
+
+                <div class="email">
+                    <div>
+                        <input type="text" placeholder="Nome de usuário" id="email" class="inputEmail" name="email">
+                        <span>@gmail.com</span>
+                    </div>
+                    <p id="emailError">Você pode usar letras, números e pontos finais</p>
+                    <p><a href="#">Usar meu endereço de e-mail atual em vez disso</a></p>
+                </div>
+
+                <div class="password">
+                    <input type="password" id="password" placeholder="Senha" name="password">
+                    <input type="password" id="passwordConfirm" placeholder="Confirmar">
+                    <div id="eye" onclick="eyeHide()"></div>
+                    <p id="passwordError">Use oito ou mais caracteres com uma combinação de letras, númeors e símbolos</p>
+                </div>
+
+                <div class="send">
+                    <p><a href="#">Faça login em vez disso</a></p>
+                    <button>Próxima</button>
+                </div>
+            </form>
+            <span class="img">
+                <img src="./img/imagem1.svg" alt="#">
+                <p>Uma única conta. Todo o Google trabalhando para você</p>
+            </span>
+        </div>
+    </div>
+
+    <script src="./src/hidePass.js"></script>
+    <script src="./src/validation.js"></script>
+</body>
+</html>

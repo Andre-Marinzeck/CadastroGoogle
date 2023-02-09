@@ -1,0 +1,83 @@
+input {
+    border: 1px solid #DADCE0;
+    border-radius: 5px;
+    padding: .6rem;
+}
+
+input:focus {
+    box-shadow: none;
+    outline: 0;
+    border: 2px solid #1B66CC;
+}
+
+.email div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #DADCE0;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    padding-right: 1rem;
+    width: 87%;
+}
+
+.inputEmail {
+    border: none;
+    background: none;
+}
+
+.password  input{
+    width: 37%;
+    margin-top: 2rem;
+}
+
+#eye {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: .2rem;
+    transform: translateY(50%);
+    cursor: pointer;
+    background: url('../../img/olhoFechado.png') center no-repeat;
+    background-size: cover;
+}
+
+#eye.eyeHide {
+    background: url('../../img/olhoAberto.png') center no-repeat;
+    background-size: cover;
+}
+
+.send button {
+    padding: 0 1.5rem;
+    background-color: #136df3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.send button:hover {
+    background-color: #1B66CC;
+    cursor: pointer;
+    border: none;
+}
+
+.borderErro {
+    border: 2px solid #db4a39;
+}
+
+.error {
+    color: #db4a39;
+    font-size: .85rem;
+    margin-top: .5rem;
+}
+
+.error:before {
+    content: "";
+    display: block;
+    background: url("../img/erro.png") no-repeat center / cover;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 0 6px 0 0;
+}
